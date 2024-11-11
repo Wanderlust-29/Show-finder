@@ -1,0 +1,49 @@
+.carouselContainer {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  width: 100%;
+  height: 100%;            
+  margin: 0 auto;           
+}
+.tv_show_list_item {
+  width: 100%;            
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 10px;         
+  box-sizing: border-box;
+}
+
+/* Ensure images fit properly */
+.tv_show_list_item img {
+  width: 100%;             /* Ensures the image stretches fully inside the container */
+  height: auto;            /* Maintain aspect ratio */
+  object-fit: contain;     /* Prevent stretching, maintain aspect ratio */
+}
+
+/* Optional styling for the carousel itself */
+.alice-carousel {
+  display: flex;
+  justify-content: center;  /* Centers the entire carousel horizontally */
+}
+
+/* Ensure the active item is centered correctly in the carousel */
+.alice-carousel .alice-carousel__stage {
+  display: flex;
+  justify-content: center;  /* Centers carousel items */
+}
+
+@media (max-width: 600px) {
+  /* Specific adjustments for smaller screens */
+  .tv_show_list_item {
+    width: 100%; /* Ensures it takes full width for smaller screens */
+  }
+
+  .tv_show_list_item img {
+    width: 100%; /* Image will stretch to fit the available width */
+    object-fit: contain; /* Prevents image from being stretched or distorted */
+  }
+}

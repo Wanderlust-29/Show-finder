@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  z-index: 999;
+  margin: 0 15px
+}
+.suggestions_list{
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 30px 30px ;
+  
+}
+.suggestion_item{
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.item_img {
+  width: 100px;  /* Exemple de taille pour les images */
+  height: auto;
+}
+
+.last_item {
+  border-radius: 0 0 30px 0;  /* Exemple de bord arrondi pour la dernière image */
+}
