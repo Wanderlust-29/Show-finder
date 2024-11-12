@@ -34,7 +34,7 @@ function App() {
         const recommendations = await TVShowAPI.fetchRecommendations(tvShowId);
         if (recommendations.length > 0) {
             const filteredRecommendations = recommendations.filter(recommendation => recommendation.backdrop_path !== null);
-            setCurrentRecommendations(filteredRecommendations.slice());
+            setCurrentRecommendations(filteredRecommendations.slice(0, 10));
         }
     }
 

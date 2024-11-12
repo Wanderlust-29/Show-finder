@@ -7,11 +7,11 @@ function TVShowList({ tvShowList, onClickItem }) {
         responsive: {
             0: {
                 items: 1,
-                itemsFit: 'contain', // This ensures the images are contained and fit within the viewport
+                itemsFit: 'contain',
                 margin: 10,
             },
             600: {
-                items: 1,  // One item per slide for small screens
+                items: 1,
                 itemsFit: 'contain',
                 margin: 10,
             },
@@ -26,22 +26,22 @@ function TVShowList({ tvShowList, onClickItem }) {
                 margin: 25,
             },
         },
-        autoPlay: true,
-        infinite: true,
-        autoPlayInterval: 3000,
-        centerMode: true,  // Centers the active item
+        centerMode: true,
     };
 
     return (
-        <div className={s.carouselContainer}>
-            <AliceCarousel {...carouselSettings}>
-                {tvShowList.map((tvShow) => (
-                    <span key={tvShow.id} className={s.tv_show_list_item}>
-                        <TVShowListItem tvShow={tvShow} onClick={onClickItem} />
-                    </span>
-                ))}
-            </AliceCarousel>
-        </div>
+        <>
+            <div className={s.title}>You may also like:</div>
+            <div className={s.carouselContainer}>
+                <AliceCarousel {...carouselSettings}>
+                    {tvShowList.map((tvShow) => (
+                        <span key={tvShow.id} className={s.tv_show_list_item}>
+                            <TVShowListItem tvShow={tvShow} onClick={onClickItem} />
+                        </span>
+                    ))}
+                </AliceCarousel>
+            </div>
+        </>
     );
 }
 

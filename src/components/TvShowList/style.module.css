@@ -1,3 +1,9 @@
+.title {
+  font-family: Roboto;
+  font-weight: 60px;
+  font-size: 20px;
+}
+
 .carouselContainer {
   display: flex;
   justify-content: center; 
