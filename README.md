@@ -19,9 +19,9 @@ Elle offre une interface simple et moderne pour explorer des séries, consulter 
 ## 🛠️ Technologies utilisées
 
 - ⚛️ **React** (avec hooks)
-- 💅 **Tailwind CSS** pour le style
+- 💅 **CSS** pour le style
 - 🌐 **API TV Maze** (ou autre API de séries)
-- 📦 **Vite** ou **Create React App** pour le bundling
+- 📦 **Vite**
 
 ---
 
@@ -29,5 +29,13 @@ Elle offre une interface simple et moderne pour explorer des séries, consulter 
 
 1. **Cloner le projet**
    ```bash
-   git clone 
+   git clone https://github.com/Wanderlust-29/Show-finder.git
    cd show-finder
+
+2. **Installer les dépendances**
+   ```bash
+   npm install
+
+3. **Lancer le serveur de développement**
+   ```bash
+   npm run dev
