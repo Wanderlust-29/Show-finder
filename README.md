@@ -20,7 +20,7 @@ Elle offre une interface simple et moderne pour explorer des séries, consulter 
 
 - ⚛️ **React** (avec hooks)
 - 💅 **CSS** pour le style
-- 🌐 **API TV Maze** (ou autre API de séries)
+- 🌐 **API TV Maze**
 - 📦 **Vite**
 
 ---
